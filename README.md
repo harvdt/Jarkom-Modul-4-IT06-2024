@@ -324,42 +324,48 @@ Gateway: 192.236.19.1
 
 ### Routing
 - Jawa
-![Screenshot 2024-06-06 200324](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/001c15d0-8c49-4dae-9a97-ece884c5d4dd)
+![Screenshot 2024-06-08 013520](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/b2e1342f-d475-43ee-b194-79e10e4a2590)
+![Screenshot 2024-06-08 013514](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/1d03044e-e3d3-405b-b3f3-992a282bf0ae)
 
 - Sulawesi
-![Screenshot 2024-06-06 200356](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/594a463f-ebdd-429c-9b34-1b8004ad5bc2)
+![Screenshot 2024-06-08 013813](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/af197de9-3624-4765-b213-ad8388d2bb0b)
 
 - Maluku Utara
-![Screenshot 2024-06-06 200456](https://github.com/sylxer/Jarkom-Modul-1-IT06-2024/assets/115382618/6de2de68-5913-4117-bfdf-61c91979ec61)
+![Screenshot 2024-06-08 013853](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/ebd8b2b4-b595-44b3-8cb3-622f3580d281)
 
 - Makasar
-![Screenshot 2024-06-06 201157](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/3d69e6e1-14d4-44ec-bee3-d183cdc1bbf3)
+![Screenshot 2024-06-08 013937](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/6bea41a5-0482-44c3-9f6f-103121d1ee97)
 
 - Belawa
-![Screenshot 2024-06-06 201214](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/f6d21eab-419b-4cde-a289-759a97810f98)
+![Screenshot 2024-06-08 014007](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/0647bbca-fc89-4069-88d0-e7ce2c60b21a)
 
 - Kalimantan
-![Screenshot 2024-06-06 200958](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/cbe078e7-0e2d-4355-ad31-4a7ec2f55810)
+![Screenshot 2024-06-08 014425](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/b03afb18-d996-4304-9ce7-e99ea5fbc822)
 
 - Kalimantan Utara
-![Screenshot 2024-06-06 201038](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/a021075d-4111-4f58-8991-553bb2ed0bd1)
+![Screenshot 2024-06-08 014509](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/6fc12b11-2f9a-4fae-9971-49dd935fcf9b)
 
 - Kalimantan Timur
-![Screenshot 2024-06-06 201100](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/8ae7c48b-13bc-463b-a0ab-abe021b7590e)
+![Screenshot 2024-06-08 014554](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/68658a8d-130e-44ff-a9bf-f1ddfe1c579a)
 
 - Kalimantan Selatan
-![Screenshot 2024-06-06 201127](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/11c072d7-829f-4f86-8041-5f41694ee70d)
+![Screenshot 2024-06-08 014718](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/3b2756b6-efde-48a8-9bbf-40b3c7176427)
 
 - Sumatera
-![Screenshot 2024-06-06 201330](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/7d18f637-cce4-4548-b1c6-a8a3aef102d0)
+![Screenshot 2024-06-08 013715](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/3f34e2a7-08bd-4283-882a-41bd0de05b92)
 
 - Sumatera Utara
-![Screenshot 2024-06-06 201356](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/f1c2a1a0-1fd5-494e-be58-5781b6b69e4b)
+![Screenshot 2024-06-08 014755](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/702e9104-db62-4747-98ed-f44e4ccdf300)
 
 - Aceh
-![Screenshot 2024-06-06 201420](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/6864ddf4-9706-4be8-b260-0db8a88458ca)
+![Screenshot 2024-06-08 014839](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/d760483b-a669-4fda-a066-d070d2c4d1fe)
 
 - Lampung
-![Screenshot 2024-06-06 201440](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/41d6cd0c-07f0-4ca4-b91c-95d8c9fc3f61)
+![Screenshot 2024-06-08 014911](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/437717e3-af64-49cb-9204-07bc8adab3df)
 
 ### Testing
+![Screenshot 2024-06-08 020730](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/122193a9-d445-4f56-b0d7-f1b17fa5c686)
+![Screenshot 2024-06-08 020903](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/1183e3b8-0bed-4486-91ef-2d7d9249d850)
+![Screenshot 2024-06-08 020946](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/23c2cd79-cb5d-4fca-af4f-d6ff8d33c9e4)
+![Screenshot 2024-06-08 021046](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/1c3a8d97-7e67-462c-8dfb-0c8550a6b69f)
+![Screenshot 2024-06-08 021207](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/173fcf10-ca70-40fa-b4d3-9f8d0d3bcc5f)
