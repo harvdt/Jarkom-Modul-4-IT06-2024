@@ -850,3 +850,131 @@ iface eth0 inet static
 	gateway 192.236.1.1
 ```
 
+### Routing
+##### aceh
+```
+#####aceh ke sumaterautara
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.0.1
+```
+
+##### lampung
+```
+#####lampung ke sumatera
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.4.5
+```
+
+##### kalimantanselatan
+```
+#####kalimantanselatan-timur
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.32.5
+```
+
+##### belawa
+```
+#####belawa kesulawesi
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.16.17
+```
+
+##### makasar
+```
+#####makasar kesulawesi
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.16.9
+```
+
+##### MALUKU UTARA
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.17.1
+```
+
+##### SUMATERA UTARA
+```
+route add -net 192.236.0.5 netmask 255.255.255.128 gw 192.236.0.2 #####SW-BLANGKARAI
+route add -net 192.236.1.1 netmask 255.255.255.224 gw 192.236.0.2 #####SW-BANDA-ACEH
+```
+
+
+##### sumatera
+```
+#####kejawa
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.16.129
+
+#####kesumatutr
+route add -net 1992.236.0.0 netmask 255.255.255.252 gw 192.236.2.1
+route add -net 192.236.0.4 netmask 255.255.255.128 gw 192.236.2.1
+route add -net 192.236.1.0 netmask 255.255.255.224 gw 192.236.2.1
+
+#####kelampung
+route add -net 192.236.4.4 netmask 255.255.255.0 gw 192.236.4.2
+```
+
+##### kalimantam timur
+```
+route add -net 192.236.32.4 netmask 255.255.255.224 gw 192.236.32.66
+route add -net 192.236.36.0 netmask 255.255.248.0 gw 192.236.32.66
+```
+
+##### kalimantan utara
+```
+route add -net 192.236.34.0 netmask 255.255.254.0 gw 192.236.33.1
+route add -net 192.236.32.0 netmask 255.255.255.252 gw 192.236.33.1
+route add -net 192.236.32.4 netmask 255.255.255.224 gw 192.236.33.1
+route add -net 192.236.36.0 netmask 255.255.248.0 gw 192.236.33.1
+```
+
+##### kalimantan
+```
+route add -net 192.236.32.64 netmask 255.255.255.252 gw 192.236.32.129
+route add -net 192.236.34.0 netmask 255.255.254.0 gw 192.236.32.129
+route add -net 192.236.32.0 netmask 255.255.255.252 gw 192.236.32.129
+route add -net 192.236.32.4 netmask 255.255.255.224 gw 192.236.32.129
+route add -net 192.236.36.0 netmask 255.255.248.0 gw 192.236.32.129
+```
+
+##### sulawesi
+```
+#####KE MALUKU-UTARA
+route add -net 192.236.18.0 netmask 255.255.248.0 gw 192.236.17.1
+
+#####KE MAKASAR
+route add -net 192.236.16.8 netmask 255.255.255.248 gw 192.236.16.9
+
+#####KE BELAWA
+route add -net 192.236.16.16 netmask 255.255.255.192 gw 192.236.16.17
+```
+
+##### jawa 
+```
+#####jawa ke sulawesi
+route add -net 192.236.17.0 netmask 255.255.255.128 gw 192.236.16.130
+route add -net 192.236.18.0 netmask 255.255.248.0 gw 192.236.16.130
+route add -net 192.236.16.0 netmask 255.255.255.248 gw 192.236.16.130
+route add -net 192.236.16.8 netmask 255.255.255.248 gw 192.236.16.130
+route add -net 192.236.16.16 netmask 255.255.255.192 gw 192.236.16.130
+
+#####jawa ke kalimantan
+route add -net 192.236.32.128 netmask 255.255.255.252 gw 192.236.48.2
+route add -net 192.236.33.0 netmask 255.255.255.0 gw 192.236.48.2
+route add -net 192.236.32.64 netmask 255.255.255.252 gw 192.236.48.2
+route add -net 192.236.34.0 netmask 255.255.254.0 gw 192.236.48.2
+route add -net 192.236.32.0 netmask 255.255.255.252 gw 192.236.48.2
+route add -net 192.236.32.4 netmask 255.255.255.224 gw 192.236.48.2
+route add -net 192.236.36.0 netmask 255.255.248.0 gw 192.236.48.2
+
+#####jawa ke sumatera
+route add -net 192.236.2.0 netmask 255.255.255.224 gw 192.236.8.2
+route add -net 192.236.0.0 netmask 255.255.255.252 gw 192.236.8.2
+route add -net 192.236.0.4 netmask 255.255.255.128 gw 192.236.8.2
+route add -net 192.236.1.0 netmask 255.255.255.224 gw 192.236.8.2
+route add -net 192.236.4.0 netmask 255.255.255.252 gw 192.236.8.2
+route add -net 192.236.4.4 netmask 255.255.255.0 gw 192.236.8.2
+```
+
+#####aceh ke sumatera utara
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.0.1
+```
+
+#####lampung ke sumatera
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.245.20.185
+```
