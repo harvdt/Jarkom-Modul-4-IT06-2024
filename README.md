@@ -1,4 +1,4 @@
-![10](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/17535663-0d32-4ecd-8305-a3b79a5559e2)##### Laporan-Resmi-Jarkom-Modul-4-IT06-2024
+# Laporan-Resmi-Jarkom-Modul-4-IT06-2024
 
 | Nama                      | NRP                       |
 |---------------------------|---------------------------|
