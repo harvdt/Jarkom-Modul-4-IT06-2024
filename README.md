@@ -1,4 +1,4 @@
-# Laporan-Resmi-Jarkom-Modul-4-IT06-2024
+![10](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/17535663-0d32-4ecd-8305-a3b79a5559e2)##### Laporan-Resmi-Jarkom-Modul-4-IT06-2024
 
 | Nama                      | NRP                       |
 |---------------------------|---------------------------|
@@ -369,3 +369,484 @@ Gateway: 192.236.19.1
 ![Screenshot 2024-06-08 020946](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/23c2cd79-cb5d-4fca-af4f-d6ff8d33c9e4)
 ![Screenshot 2024-06-08 021046](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/1c3a8d97-7e67-462c-8dfb-0c8550a6b69f)
 ![Screenshot 2024-06-08 021207](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/115382618/173fcf10-ca70-40fa-b4d3-9f8d0d3bcc5f)
+
+
+## GNS (CIDR)
+
+### Topologi
+![image](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/5113c8ef-2810-4cab-ab06-da9e0f31cea2)
+
+### Penggabungan CIDR
+![1](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/0f984f8e-7734-40d2-b173-3aa0db0c0a1f)
+![2](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/1fbfdfe2-0540-4140-a7a4-55470aa2a042)
+![3](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/d589c214-dcf1-46b2-92f2-f4d0c0ec3538)
+![4](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/5583916a-1737-45ba-a0a6-ca87d4181f79)
+![5](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/3d966b9a-286d-40d4-b823-81cbc98730e8)
+![6](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/c69d7151-9561-44a0-9a98-b9635533d1fb)
+![7](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/1e0ca6a8-753e-4d7c-8e8c-82ef24561e2d)
+![8](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/94cc7662-9c1e-4eb5-94f1-335585aeed69)
+![9](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/42f509c1-d2ca-4b5d-98de-44a79e427c84)
+![10](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/c2f3e9dc-3708-4d84-88f4-5cc776b849b6)
+![11](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/a47031d2-d0f5-4943-8391-07cd376f1808)
+
+Kemudian berikut ini merupakan tabel subnetting berdasarkan penggabungan yang sudah dilakukan
+![image](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/13d377e2-d5d5-426a-bf8d-918175b1b54e)
+![image](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/09dce68b-23cd-4425-9cde-5a65a6c26d3e)
+![image](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/41fdeab2-4756-420d-91cf-d00b1e4fa8ba)
+![image](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/6ab00fe0-f948-484a-8646-7022ac12451d)
+
+
+### Tree
+Berdasarkan penggabungan yang sudah dilakukan berikut adalah tree subnetting dari CIDR
+![finaltreecidrs](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/768e0e65-5eeb-40c1-87b9-aa4efe15a1e1)
+
+### Hasil Pembagian Subnet
+Berdasarkan Tree, didpatkan pembagian subnet sebagai berikut
+![image](https://github.com/harvdt/Jarkom-Modul-4-IT06-2024/assets/143340695/fbdc5cf4-dce7-4233-a7a8-9c9d5f26be23)
+
+### Konfigurasi pada GNS3
+##### jawa
+```
+auto eth0
+iface eth0 inet dhcp
+
+#####A1
+auto eth1
+iface eth1 inet static
+  address 192.236.16.129
+  netmask 255.255.255.252
+
+#####A7
+auto eth2
+iface eth2 inet static
+  address 192.236.48.1
+  netmask 255.255.255.252
+
+#####A15
+auto eth3
+iface eth3 inet static
+  address 192.236.8.1
+  netmask 255.255.255.252
+```
+
+##### sulawesi
+```
+#####A1 jawa-sulawesi
+auto eth0
+iface eth0 inet static
+	address 192.236.16.130
+	netmask 255.255.255.252
+
+#####A2 Sulawesi-SW-Gorontalo-PC-Gorontalo-SW-Gorontalo-PC-Marisa
+auto eth1
+iface eth1 inet static
+	address 192.236.17.1
+	netmask 255.255.255.128
+
+#####A4 Sulawesi-SW-Sulsel-Makasar-SW-Sulsel-Belawa
+auto eth2
+iface eth2 inet static
+	address 192.236.16.1
+	netmask 255.255.255.248
+```
+
+##### PC-Gorontalo
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.17.2
+	netmask 255.255.255.128
+	gateway 192.236.17.1
+```
+
+##### PC-Marisa
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.17.3
+	netmask 255.255.255.128
+	gateway 192.236.17.1
+```
+
+##### maluku utara
+```
+#####A3 Maluku-Utara > SW-Maluku > Tobelo > SW-Maluku >  Morotai > SW-Maluku > Ternate
+auto eth0
+iface eth0 inet static
+	address 192.236.18.1
+	netmask 255.255.248.0
+```
+
+##### tobelo
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.18.2
+	netmask 255.255.248.0
+	gateway 192.236.18.1
+```
+
+##### morotai
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.18.3
+	netmask 255.255.248.0
+	gateway 192.236.18.1
+```
+
+##### ternate
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.18.4
+	netmask 255.255.248.0
+	gateway 192.236.18.1
+```
+
+##### makasar
+```
+#####A5 Makasar > SW-Limbung > Galesong > SW-Limbung > Topejawa-Takalar
+auto eth0
+iface eth0 inet static
+	address 192.236.16.9
+	netmask 255.255.255.248
+	gateway 192.236.16.1
+```
+
+##### galesong
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.16.10
+	netmask 255.255.255.248
+	gateway 192.236.16.9
+```
+
+##### topejawa
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.16.11
+	netmask 255.255.255.248
+	gateway 192.236.16.9
+```
+
+##### belawa
+```
+#####A6 Belawa  > SW-Tempe > Madini > SW-Tempe > Baru
+auto eth0
+iface eth0 inet static
+	address 192.236.16.17
+	netmask 255.255.255.192
+	gateway 192.236.16.1
+```
+
+##### madini
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.16.18
+	netmask 255.255.255.192
+	gateway 192.236.16.17
+```
+
+##### baru
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.16.19
+	netmask 255.255.255.192
+	gateway 192.236.16.17
+```
+
+
+##### kalimantan
+```
+#####A7 Jawa-Kalimantan
+auto eth0
+iface eth0 inet static
+	address 192.236.48.2
+	netmask 255.255.255.252
+
+#####A8 Kalimantan-Kalimantan-Utara
+auto eth1
+iface eth1 inet static
+	address 192.236.32.129
+	netmask 255.255.255.252
+```
+
+##### kalimantan-utara
+```
+#####A8 Kalimantan-Kalimantan-Utara
+auto eth0
+iface eth0 inet static
+	address 192.236.32.130
+	netmask 255.255.255.252
+
+#####A9 Kalimantan-Utara > SW-Tanjung-Selor > Selimau
+auto eth1
+iface eth1 inet static
+	address 192.236.33.1
+	netmask 255.255.255.0
+
+#####A10 Kalimantan-Utara > Kalimantan-Timur
+auto eth2
+iface eth2 inet static
+	address 192.236.32.65
+	netmask 255.255.255.252
+```
+
+##### selimau
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.33.2
+	netmask 255.255.255.0
+	gateway 192.236.33.1
+```
+
+##### Kalimantan-Timur
+```
+#####A10 Kalimantan-Timur > Kalimantan-Utara 
+auto eth0
+iface eth0 inet static
+	address 192.236.32.66
+	netmask 255.255.255.252
+
+#####A11 Kalimantan-Timur > SW-Balikpapan > Bangkirari > SW-Balikpapan > Lamaru
+auto eth1
+iface eth1 inet static
+	address 192.236.34.1
+	netmask 255.255.254.0
+
+#####A12 Kalimantan-Timur > Kalimantan-Selatan
+auto eth2
+iface eth2 inet static
+	address 192.236.32.1
+	netmask 255.255.255.252
+```
+
+##### Bangkirari
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.34.2
+	netmask 255.255.254.0
+	gateway 192.236.34.1
+```
+
+##### Lemaru
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.34.3
+	netmask 255.255.254.0
+	gateway 192.236.34.1
+```
+
+##### Kalimantan-Selatan
+```
+#####A12 Kalimantan-Selatan > Kalimantan-Timur
+auto eth0
+iface eth0 inet static
+	address 192.236.32.2
+	netmask 255.255.255.252
+
+#####A13 Kalimantan-Selatan > SW-Boenati > Angsana
+auto eth1
+iface eth1 inet static
+	address 192.236.32.5
+	netmask 255.255.255.224
+
+#####A14 Kalimantan-Selatan > SW-Banjarmasin > Bajuin > SW-Banjarmasin > Taksiun > SW-Banjarmasin > Batakan
+auto eth2
+iface eth2 inet static
+	address 192.236.36.1
+	netmask 255.255.248.0
+```
+
+##### Angsana
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.32.6
+	netmask 255.255.255.224
+	gateway 192.236.32.5
+```
+
+##### Bajuin
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.36.2
+	netmask 255.255.248.0
+	gateway 192.236.36.1
+```
+
+##### taksiun
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.36.3
+	netmask 255.255.248.0
+	gateway 192.236.36.1
+```
+
+##### batakan
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.36.4
+	netmask 255.255.248.0
+	gateway 192.236.36.1
+```
+
+##### sumatera
+```
+#####A15 Jawa-sumatera
+auto eth0
+iface eth0 inet static
+	address 192.236.8.2
+	netmask 255.255.255.252
+
+#####A16 Sumatera-SW-Toba-Samosir-SW-Toba-Sibandang
+auto eth1
+iface eth1 inet static
+	address 192.236.2.1
+	netmask 255.255.255.224
+
+#####A20 Sumatera > Lampung 
+auto eth2
+iface eth2 inet static
+	address 192.236.4.1
+	netmask 255.255.255.252
+```
+
+##### samosir
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.2.2
+	netmask 255.255.255.224
+	gateway 192.236.2.1
+```
+
+##### sibandang
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.2.3
+	netmask 255.255.255.224
+	gateway 192.236.2.1
+```
+
+##### lampung
+```
+#####A20 Sumatera > Lampung 
+auto eth0
+iface eth0 inet static
+	address 192.236.4.2
+	netmask 255.255.255.252
+
+#####A21 Lampung > SW-Bandar-Lampung > Sebuku > SW-Bandar-Lampung > Sebesi
+auto eth1
+iface eth1 inet static
+	address 192.236.4.5
+	netmask 255.255.255.0
+```
+
+##### sebuku
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.4.6
+	netmask 255.255.255.0
+	gateway 192.236.4.5
+```
+
+##### sebesi
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.4.7
+	netmask 255.255.255.0
+	gateway 192.236.4.5
+```
+
+##### Sumatera utara
+```
+#####A17 Sumatera-Utara > Aceh
+auto eth0
+iface eth0 inet static
+	address 192.236.0.1
+	netmask 255.255.255.252
+```
+
+##### Aceh
+```
+#####A17 Sumatera-Utara > Aceh
+auto eth0
+iface eth0 inet static
+	address 192.236.0.2
+	netmask 255.255.255.252
+    gateway 192.236.0.1
+
+#####A18 Aceh > SW-Blangrakal > Berawang-Tampu > SW-Blangrakal > Enang-Enang > SW-Blangrakal > Starland
+auto eth1
+iface eth1 inet static
+	address 192.236.0.5
+	netmask 255.255.255.128
+
+#####A19 Aceh > SW-Banda-Aceh > Sabang > SW-Banda-Aceh > Lambaro
+auto eth2
+iface eth2 inet static
+	address 192.236.1.1
+	netmask 255.255.255.224
+```
+
+##### Berawang-Tampu
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.0.6
+	netmask 255.255.255.128
+	gateway 192.236.0.5
+```
+
+##### Enang-enang
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.0.7
+	netmask 255.255.255.128
+	gateway 192.236.0.5
+```
+
+##### Starland
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.0.8
+	netmask 255.255.255.128
+	gateway 192.236.0.5
+```
+
+##### Sabang
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.1.2
+	netmask 255.255.255.224
+	gateway 192.236.1.1
+```
+
+##### lembaro
+```
+auto eth0
+iface eth0 inet static
+	address 192.236.1.3
+	netmask 255.255.255.224
+	gateway 192.236.1.1
+```
+
