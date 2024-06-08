@@ -969,12 +969,12 @@ route add -net 192.236.4.0 netmask 255.255.255.252 gw 192.236.8.2
 route add -net 192.236.4.4 netmask 255.255.255.0 gw 192.236.8.2
 ```
 
-#####aceh ke sumatera utara
+##### aceh ke sumatera utara
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.0.1
 ```
 
-#####lampung ke sumatera
+##### lampung ke sumatera
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.245.20.185
 ```
