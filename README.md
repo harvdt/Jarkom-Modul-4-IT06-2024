@@ -978,3 +978,6 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.236.0.1
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.245.20.185
 ```
+
+## obstacle
+Routing yang dilakukan hanya pada Sulawesi dikarenakan routing pada Kalimantan dan Sumatera tidak berhasil. Alhasil, node hanya dapat melakukan ping antar sesama node di area(A1-A21) yang sama. Sementara pada Sulawesi, node yang berbeda area berhasil melakukan ping satu sama lain, bukan hanya pada area yang sama saja. Akan tetapi, node dari Sulawesi tidak bisa melakukan ping terhadap node di Kalimantan dan Sumatera.
